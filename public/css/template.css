@@ -1,0 +1,59 @@
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-60 { font-size: 60px; }
+
+.jumbotron-image {
+  padding: 30px 15px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #f9f9f9;
+  text-align: center;
+  background-size: cover;
+  background-image: url("/images/jumbo-bg.jpg");
+}
+
+.card-header {
+  background-color: #2E2E2E;
+  color: white;
+}
+
+.card-footer {
+  background-color: #eeeeee;
+}
+
+.image-format {
+  height: 280px;
+  max-width: 500px;
+}
+
+a.nav-link:focus {
+  color: orange !important;
+}
+
+a.nav-link:hover {
+  color: orange !important;
+  text-decoration: none;
+}
+
+.filter-option {
+  background-color: #ffc107;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 200px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 200px;
+}

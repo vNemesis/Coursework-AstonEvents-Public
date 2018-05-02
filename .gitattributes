@@ -1,3 +1,5 @@
 secretfile filter=git-crypt diff=git-crypt
 
-*.secret filter=git-crypt diff=git-crypt
+ApiController.php filter=git-crypt diff=git-crypt
+EventController.php filter=git-crypt diff=git-crypt
+app.blade.php filter=git-crypt diff=git-crypt
