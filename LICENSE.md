@@ -35,7 +35,7 @@ Any contributions are welcome!
 ## Notes, License & Copyright
 *A Functionally Equivalent Statement is a code fragment which, regardless of whitespace and object names, achieves the same result within the context of a PHP web application. Basically you can't copy the code, rename the variables, add whitespace and say it's different. It's not, Durr.
 
-Bottom Line, Have a looksy and see if you see something I can improve, tell me, Submit a Pull Request, but please don't steal as time and effot has gone into this project and since its educational using it for educational work is techinally plagiarism.
+Bottom Line, Have a looksy and see if you see something I can improve, tell me, Submit a Pull Request, but please don't steal as time and effot has gone into this project and since its educational using it as your own educational work is techinally plagiarism.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
