@@ -2,12 +2,16 @@
 
 Here is all the license mumbo jumbo.
 
-Firstly this is a Educational assignment so copying anything for your assignment is plagiarism and all other rules around this area apply.
+Firstly this is a Educational assignment so copying anything for your assignment and claiming it is your own is plagiarism and all other rules around this area apply.
+
+I do not own any of the images uncless specified otherwise.
 
 ## Art
 Art assets are released under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0), a summary of which can be found at: https://creativecommons.org/licenses/by-nc/4.0/
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /></a>
+
+Images of Aston Logo and background belong to ©Copyright Aston University,Birmingham, B4 7ET - http://www.aston.ac.uk/
 
 ## Contributions
 Contribution to this repository means that you are granting me rights over the code that you choose to contribute. If you do not agree with that, do not contribute.
