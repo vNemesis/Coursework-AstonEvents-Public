@@ -103,7 +103,7 @@
         <div class="row equal">
           <div class="col-md-6">
             <h3 class="text-center">Description</h3>
-            <pre class="card-text">{{ $event->description }}</pre>
+            <div id="description" class="card-text">{!! $event->longdescription !!}</div>
             <hr />
             <h4 class="text-center">Related Events</h4>
             <div class="row justify-content-center">

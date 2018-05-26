@@ -17,6 +17,7 @@
   <li>Material Design for Bootstrap at https://mdbootstrap.com/</li>
   <li>Font Awesome at https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css</li>
   <li>Google Raleway at https://fonts.googleapis.com/css?family=Raleway:300,400,600</li>
+  <li>Markdown Editor at https://github.com/Inscryb/inscryb-markdown-editor</li>
 </ul>
-<h6>Version 1.0.5</h6>
+<h6>Version 1.0.6</h6>
 @endsection

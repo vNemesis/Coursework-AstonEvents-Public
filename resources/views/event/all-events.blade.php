@@ -162,7 +162,7 @@
         <td class="align-middle">{{ $event->name }}</td>
         <td class="align-middle">
           <div>
-            <?php echo substr($event->description, 0, 150); ?>...
+            <?php echo substr($event->shortdescription, 0, 150); ?>...
           </div>
           <div>
             <strong>Location: </strong> {{ $event->location }}
@@ -189,7 +189,7 @@
      <hr />
      <h4 class="card-title">{{ $event->name }}</h4>
      <h4><span class="{{ $event->badge }}">{{ $event->text }}</span></h4>
-     <p class="card-text"><?php echo substr($event->description, 0, 250); ?></p>
+     <p class="card-text"><?php echo substr($event->shortdescription, 0, 250); ?></p>
      <ul class="list-group list-group-flush">
        <li class="list-group-item"><strong>Category:</strong> {{ $event->category }}</li>
        <li class="list-group-item">{{ $event->format['time'] }}, {{ $event->format['date'] }}</li>

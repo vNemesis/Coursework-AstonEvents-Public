@@ -4,6 +4,15 @@
 <title>{{ config('app.name', 'Aston Events') }}: Add event</title>
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/inscrybmde@1.11.3/dist/inscrybmde.min.css">
+@endsection
+
+@section('js')
+<script src="https://cdn.jsdelivr.net/npm/inscrybmde@1.11.3/dist/inscrybmde.min.js"></script>
+<script src="js/fileedit.js"></script>
+@endsection
+
 
 @section('content')
   <br />
@@ -93,25 +102,73 @@
                         </div>
                     </div>
 
-                    <!-- Description of event -->
+                    <!-- Short Description of event -->
                     <div class="form-group row">
-                        <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
+                        <label for="shortdescription" class="col-md-4 col-form-label text-md-right">{{ __('Short Description') }}</label>
 
                         <div class="col-md-6">
-                            <textarea id="description" type="text" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" name="description" rows="10" required autofocus>{{ old('description') }}</textarea>
+                            <textarea id="shortdescription" type="text" class="form-control{{ $errors->has('shortdescription') ? ' is-invalid' : '' }}" name="shortdescription" rows="3" required autofocus>{{ old('shortdescription') }}</textarea>
+                            <div class="text-right" id="sdfeedback"></div>
+                            <br />
                             <ul>
-                              <li><strong>Max:</strong> 2500 characters</li>
-                              <li>Text will preserve formatting</li>
-                              <li>Need more? You can also upload a PDF</li>
+                              <li><strong>Max:</strong> 250 characters</li>
+                              <li>Simple description shown on search page</li>
                             </ul>
 
-                            @if ($errors->has('description'))
+                            @if ($errors->has('shortdescription'))
                                 <span class="invalid-feedback">
-                                    <strong>{{ $errors->first('description') }}</strong>
+                                    <strong>{{ $errors->first('shortdescription') }}</strong>
                                 </span>
                             @endif
                         </div>
                     </div>
+
+                    <!-- Long Description of event -->
+                    <div class="form-group row">
+                        <label for="longdescription" class="col-md-4 col-form-label text-md-right">{{ __('Long Description') }}</label>
+
+                        <div class="col-md-6">
+
+                        <!-- Tabs for editor -->
+                          <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#descriptionTab">Text</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#editorTab">Editor</a>
+                            </li>
+                          </ul>
+
+                          <br />
+
+                          <!-- Editor and text views-->
+                          <div class="tab-content">
+                            <div id="descriptionTab" class="tab-pane container active">
+                              <textarea id="longdescription" type="text" class="form-control{{ $errors->has('longdescription') ? ' is-invalid' : '' }}" name="longdescription" rows="10" required autofocus>{{ old('longdescription') }}</textarea>
+                            </div>
+                            <div id="editorTab" class="tab-pane container fade">
+                              <textarea id="editor" rows="10"></textarea>
+                              <button type="button" class="btn btn-outline-success" onclick="passValue();">Save</button>
+                            </div>
+                          </div>
+                            <div class="text-right" id="ldfeedback"></div>
+                          <hr />
+
+                            <ul>
+                              <li><strong>Max:</strong> 3500 characters</li>
+                              <li>More detailed description</li>
+                              <li>Uses Markdown formatting</li>
+                              <li>Need more space? You can also upload a PDF</li>
+                            </ul>
+
+                            @if ($errors->has('longdescription'))
+                                <span class="invalid-feedback">
+                                    <strong>{{ $errors->first('longdescription') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+                    </div>
+
 
                     <!-- Location of event -->
                     <div class="form-group row">
@@ -214,4 +271,19 @@
         </div>
     </div>
 </div>
+<!-- Start simple MDE -->
+<script>
+    var inscrybmde = new InscrybMDE({
+        element: document.getElementById("editor"),
+        hideIcons: ["image", "table", "side-by-side", "fullscreen", "quote"],
+        promptURLs: true,
+        placeholder: "Enter description here...",
+    });
+
+    function passValue()
+    {
+      alert("Description Saved");
+      document.getElementById("longdescription").innerHTML = inscrybmde.value();
+    }
+</script>
 @endsection

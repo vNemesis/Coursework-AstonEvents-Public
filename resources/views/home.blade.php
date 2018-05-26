@@ -56,7 +56,7 @@
       <hr />
       <h3 class="card-title">{{ $event->name }}</h3>
       <h4><span class="{{ $event->badge }}">{{ $event->text }}</span></h4>
-      <p class="card-text"><?php echo substr($event->description, 0, 250); ?></p>
+      <p class="card-text"><?php echo substr($event->shortdescription, 0, 250); ?></p>
     </div>
     <a href="{{ route('event', $event->id) }}" class="btn btn-amber waves-effect">See more</a>
     <div class="card-footer">
