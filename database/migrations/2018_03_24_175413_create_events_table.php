@@ -18,7 +18,8 @@ class CreateEventsTable extends Migration
             $table->string('name', 64);
             $table->string('category', 200);
             $table->datetime('datetime');
-            $table->string('description', 2500);
+            $table->string('shortdescription', 500);
+            $table->string('longdescription', 3500);
             $table->string('location', 100);
             $table->integer('organiserid')->unsigned();
             $table->string('imagepath', 500);

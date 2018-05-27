@@ -4,6 +4,9 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
           <br />
+          <div class="alert alert-warning fade show">
+            Note: You account will be submitted for approval after completing this form. During this time you may not create events until an admin has approved your account.
+          </div>
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
 
@@ -12,7 +15,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>

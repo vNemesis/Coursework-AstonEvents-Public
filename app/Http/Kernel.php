@@ -61,6 +61,7 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'nocache' => \App\Http\Middleware\httpNoCache::class,
         'customauth' => \App\Http\Middleware\customAuth::class,
+        'userapproved' => \App\Http\Middleware\userapproved::class,
         'github.secret.token' => \App\Http\Middleware\GitHubSecretTokenMiddleware::class,
     ];
 }
