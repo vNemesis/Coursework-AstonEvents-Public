@@ -4,7 +4,7 @@
 ## View the project live here!
 http://www.uppalhrs.eas-vmin2410-01.aston.ac.uk/
 
-Please read Licence here before doing anyhting: <a href=https://github.com/HarmanU/Coursework-AstonEvents-Public/blob/master/LICENSE.md > HERE! </a>
+Please read Licence here before doing anything: <a href=https://github.com/HarmanU/Coursework-AstonEvents-Public/blob/master/LICENSE.md > HERE! </a>
 
 ## Decrypted access to core files available on request
 ----
