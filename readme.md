@@ -1,4 +1,4 @@
-# Coursework for Module CS2010 by Harman Uppal
+# Coursework for Module CS2010 by Harman U
 ## 2018 - Aston University
 
 ## View the project live here!
